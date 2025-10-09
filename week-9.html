@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 9: Why a College Needs an EDC | EDC KPRCAS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Additional styling for the article content */
+    .prose h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 2em;
+      margin-bottom: 1em;
+    }
+    .prose p {
+      line-height: 1.75;
+      margin-bottom: 1.25em;
+    }
+    .prose ul {
+      list-style-type: disc;
+      margin-left: 1.5em;
+      margin-bottom: 1.25em;
+    }
+    .prose li {
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<div class="container mx-auto px-4 py-10 max-w-4xl">
+  <!-- Header -->
+  <header class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-gray-900">EDC KPRCAS</h1>
+    <p class="text-lg text-gray-500 mt-1">The Founder's Journey</p>
+  </header>
+
+  <main>
+    <article class="bg-white p-8 sm:p-12 rounded-lg border border-gray-200">
+      <!-- Back Link -->
+      <div class="mb-8">
+        <a href="https://blog.edckprcas.co.in" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300 font-semibold">&larr; Back to all posts</a>
+      </div>
+
+      <div id="post-content">
+        <!-- Post Header -->
+        <h1 class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
+          Week 9: Why a College Needs an Entrepreneurship Development Cell
+        </h1>
+        <p class="mt-4 text-lg text-gray-500">
+          Published on October 10, 2025
+        </p>
+
+        <hr class="my-8">
+
+        <!-- Post Content -->
+        <div class="prose max-w-none text-gray-600">
+          <p>A college needs an Entrepreneurship Development Cell (EDC) because it transforms the campus into a proving ground for innovation, self-employment, and economic leadership. The EDC fills a critical gap that a traditional academic curriculum alone cannot address—by offering a launchpad for entrepreneurial talent that directly impacts students, faculty, and the broader community.</p>
+
+          <h2>Bridging Education and Real-World Opportunity</h2>
+          <p>An EDC integrates entrepreneurial thinking with academic learning, making education not just about acquiring knowledge but about cultivating skills and mindsets to solve real-world problems. Through workshops, business plan competitions, mentoring, and industry partnerships, EDCs provide students with exposure to the realities of starting and running a business—helping them move from textbook theories to actionable ventures.</p>
+
+          <h2>Fostering Economic Growth and Employability</h2>
+          <p>EDCs empower students to move from job seeking to job creation, giving them the confidence and practical know-how needed to turn ideas into startups. This contributes to local and national economic growth through new business formation and employment opportunities. By supporting innovation, intellectual property development, and product prototyping, EDCs create ecosystems where students graduate ready not only to fill jobs but to design, lead, and expand them. Activities like pitch days, hackathons, and direct industry mentorship allow students to gain business acumen, risk management experience, and a network of professional contacts.</p>
+
+          <h2>Culture of Entrepreneurship and Innovation</h2>
+          <p>With an EDC, a college builds an enduring culture of creativity, risk-taking, and resilience. By giving students a safe environment to fail, learn, and try again, EDCs foster leaders who are adaptable and visionary—traits essential in today’s rapidly changing markets.</p>
+
+          <h2>Social and Community Impact</h2>
+          <p>Finally, the presence of an EDC mobilizes the resources, motivation, and collaboration necessary to address societal challenges through entrepreneurial solutions, making students socially conscious innovators.</p>
+
+          <p>In essence, an EDC is indispensable for modern colleges. It provides the structure, guidance, and inspiration to turn student dreams into real ventures, ensuring graduates are ready for both employment and entrepreneurship, while also making a tangible impact on their communities.</p>
+        </div>
+      </div>
+      <div id="upcoming-placeholder" style="display: none;" class="text-center py-16">
+        <h2 class="text-2xl font-bold text-gray-700">Coming Soon!</h2>
+        <p class="text-gray-500 mt-2">This article will be available on October 10, 2025.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="mt-12 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+    &copy; 2025 EDC KPRCAS. All Rights Reserved.
+  </footer>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const publicationDate = new Date('2025-10-10T00:00:00');
+    const currentDate = new Date();
+
+    // Set current date to the beginning of the day for a clean comparison
+    currentDate.setHours(0, 0, 0, 0);
+
+    const postContent = document.getElementById('post-content');
+    const upcomingPlaceholder = document.getElementById('upcoming-placeholder');
+
+    if (currentDate < publicationDate) {
+      if(postContent) postContent.style.display = 'none';
+      if(upcomingPlaceholder) upcomingPlaceholder.style.display = 'block';
+    }
+  });
+</script>
+
+</body>
+</html>
+
